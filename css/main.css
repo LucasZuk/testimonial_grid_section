@@ -29,3 +29,13 @@
 	{
 		font-family: 'Barlow Semi Condensed', sans-serif;
 	}
+
+	.left_part__top
+	{
+		display: flex;
+	}
+
+	.container__review
+	{
+		max-width: 540px;
+	}

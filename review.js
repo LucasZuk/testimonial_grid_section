@@ -48,8 +48,8 @@ class Review
 	 		reviewTitle.style.color = colorText;
 
 	 	let reviewParagraph = document.createElement("p");
-	 		reviewParagraphe.innerHTML = this.reviewParagraph;
-	 		reviewParagraphe.classList.add("review__paragraphe", "review__paragraphe--layout");
+	 		reviewParagraph.innerHTML = this.reviewParagraph;
+	 		reviewParagraph.classList.add("review__paragraph", "review__paragraph--layout");
 	 		reviewParagraph.style.color = colorText;
 
 	 	/* IMPLEMENTATION ON THE HTML */
@@ -67,8 +67,10 @@ let reviews = [];
 
 let name;
 let status;
+let photo;
 let title;
 let text;
+let parent;
 let colorBG;
 let colorText;
 let size;
@@ -76,29 +78,41 @@ let size;
 	/* REVIEW 1 */
 		name = 'Daniel Clifford';
 		status = 'Verified Graduate';
+		photo = './images/image-daniel.jpg';
 		title = 'I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.';
 		text = '“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”';
-		parent = 'left_part__top'
-		colorBG = hsl(263, 55%, 52%);
-		colorText = hsl(0, 0%, 81%);
-		size = 1.73;
+		parent = 'left_part__top';
+		colorBG = 'hsl(263, 55%, 52%)';
+		colorText = 'hsl(0, 0%, 81%)';
+		size = 1;
 		
-		reviews.push( new Review(name, status, title, text).publishReview(parent, colorBG, colorText, size);
+		reviews.push( new Review(name, status, photo, title, text));
+		reviews[0].publishReview(parent, colorBG, colorText, size);
 
-	
+	/* REVIEW 2 */
+		name = 'Jonathan Walters';
+		status = 'Verified Graduate';
+		photo = './images/image-jonathan.jpg';
+		title = 'The team was very supportive and kept me motivated';
+		text = '“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”';
+		parent = 'left_part__top';
+		colorBG = 'hsl(217, 19%, 35%)';
+		colorText = 'hsl(0, 0%, 81%)';
+		size = 2;
+		
+		reviews.push( new Review(name, status, photo, title, text));
+		reviews[1].publishReview(parent, colorBG, colorText, size);
   
 
   
 
   
 
-  /*Jonathan Walters
-  Verified Graduate
+  /*
 
-  The team was very supportive and kept me motivated
+  
 
-  “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-  for a big company. This was one of the best investments I’ve made in myself. ”
+  
 
   Jeanette Harmon
   Verified Graduate
