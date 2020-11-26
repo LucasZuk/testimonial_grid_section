@@ -1,0 +1,13 @@
+.attribution--layout
+{
+	font-size: 13px; 
+	text-align: center; 
+
+	width: var(--container_width);
+	margin-left: var(--container_margin_left);
+	margin-top: 5em;
+}
+.attribution a 
+{ 
+	color: hsl(228, 45%, 44%); 
+}

@@ -1,15 +1,16 @@
-/* DESKTOP PARAMETERS ------------------------*/
+/* TABLET PARAMETERS ------------------------*/
 
-@media screen and (min-width: 780px)
+@media screen and (min-width : 375px) and (max-width : 779px)
 {
 
 	.container
 		{
 			display: grid;
 			grid-template:
-			     "top_long_review top_long_review top_short_review right_review" var(--top_height)
-			     "bottom_short_review bottom_long_review bottom_long_review right_review" var(--bottom_height)
-			    / var(--short_width) var(--middle_width) var(--short_width) var(--short_width);			
+			     "top_long_review top_long_review top_short_review" var(--top_height)
+			     "bottom_short_review bottom_long_review bottom_long_review" var(--bottom_height)
+			     "right_review right_review right_review" var(--bottom_height)
+			    / var(--short_width) var(--middle_width) var(--short_width);			
 			grid-column-gap: var(--container_column_gap);
 			grid-row-gap: var(--container_row_gap);
 		}
@@ -20,35 +21,35 @@
 			--body_width : 100vw;
 			--body_height : 100vh;
 
-			--container_width : 85.39em;
-			--container_height : 44em;
+			--container_width : 47.09em;
+			--container_height : auto;
 
 			/* GRID SIZE */
-				--left_part_width : 63.46em;
+				--left_part_width : 60.46em;
 				--left_part_height : 44em;
 
-				--top_width : 63.46em;
-				--top_height : 21.69em;
+				--top_width : 57.46em;
+				--top_height : 26.69em;
 
-				--bottom_width : 63.46em;
-				--bottom_height : 20.46em;
+				--bottom_width : 60.46em;
+				--bottom_height : 25.46em;
 
-				--short_width : 19.62em;
-				--middle_width : 19.61em;
-				--long_width : 41.54em;
+				--short_width : 13.62em;
+				--middle_width : 17.85em;
+				--long_width : 35.54em;
 
-				--right_part_width : 19.62em;
+				--right_part_width : 16.62em;
 				--right_part_height : 44em;
 
 			/* REVIEW SIZE */
-				--review_top_height : 17.99em;
-				--review_bottom_height : 16.76em;
+				--review_top_height : 22.99em;
+				--review_bottom_height : 21.76em;
 
-				--review_short_width : 14.48em;
-				--review_middle_width : 14.46em;
-				--review_long_width : 36.39em;
+				--review_short_width : 8.48em;
+				--review_middle_width : 8.46em;
+				--review_long_width : 27.39em;
 
-				--review_right_part_width : 14.48em;
+				--review_right_part_width : 11.48em;
 				--review_right_part_height : 40.30em;
 
 			--profil_height : 2.46em;
@@ -58,7 +59,9 @@
 			--name_font_weight : 500;
 			--status_font_weight : 300;
 			--paragraph_font_weigth : 300;
+
 			--title_font_weight : 500;
+			--title_line_height : 1em;
 
 
 
@@ -67,7 +70,7 @@
 		/* MARGIN ------------------------*/
 			--identity_margin_left : 1.31em;
 
-			--container_margin_left : 12.69em;
+			--container_margin_left : 0.69em;
 			--container_margin_top : 12.69em;
 			--container_margin_right : auto;
 			--container_margin_bottom : auto;
@@ -90,14 +93,14 @@
 		/*  FLEXBOX ------------------------*/
 
 		/*  GRID ------------------------*/
-		--container_column_gap : 2.31em; 
-		--container_row_gap : 1.85em;
+		--container_column_gap : 1em; 
+		--container_row_gap : 0.85em;
 
 
 
 
 	}
-}
+/*}
 
 @media screen and (max-width: 1280px)
 {
@@ -121,4 +124,4 @@
 			--container_margin_right : auto;
 			--container_margin_bottom : auto;
 	}
-}
+}*/

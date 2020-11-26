@@ -1,0 +1,103 @@
+/* TABLET PARAMETERS ------------------------*/
+
+@media screen and (min-width : 375px) and (max-width : 779px)
+{
+
+	.container
+		{
+			display: grid;
+			grid-template:
+			     "top_long_review top_long_review top_short_review" var(--top_height)
+			     "bottom_short_review bottom_long_review bottom_long_review" var(--bottom_height)
+			     "right_review right_review right_review" var(--bottom_height)
+			    / var(--short_width) var(--middle_width) var(--short_width);			
+			grid-column-gap: var(--container_column_gap);
+			grid-row-gap: var(--container_row_gap);
+		}
+		
+	:root
+	{
+		/* SIZE ------------------------*/
+			--body_width : 100vw;
+			--body_height : 100vh;
+
+			--container_width : 47.09em;
+			--container_height : auto;
+
+			/* GRID SIZE */
+				--left_part_width : 60.46em;
+				--left_part_height : 44em;
+
+				--top_width : 57.46em;
+				--top_height : 26.69em;
+
+				--bottom_width : 60.46em;
+				--bottom_height : 25.46em;
+
+				--short_width : 13.62em;
+				--middle_width : 17.85em;
+				--long_width : 35.54em;
+
+				--right_part_width : 16.62em;
+				--right_part_height : 44em;
+
+			/* REVIEW SIZE */
+				--review_top_height : 22.99em;
+				--review_bottom_height : 21.76em;
+
+				--review_short_width : 8.48em;
+				--review_middle_width : 8.46em;
+				--review_long_width : 27.39em;
+
+				--review_right_part_width : 11.48em;
+				--review_right_part_height : 40.30em;
+
+			--profil_height : 2.46em;
+			--picture_height : 2.15em;
+
+		/* FONT ------------------------*/
+			--name_font_weight : 500;
+			--status_font_weight : 300;
+			--paragraph_font_weigth : 300;
+
+			--title_font_weight : 500;
+			--title_line_height : 1em;
+
+
+
+		/* BACKGROUND ------------------------*/
+
+		/* MARGIN ------------------------*/
+			--identity_margin_left : 1.31em;
+
+			--container_margin_left : 0.69em;
+			--container_margin_top : 12.69em;
+			--container_margin_right : auto;
+			--container_margin_bottom : auto;
+
+		/* PADDING ------------------------*/
+			--review_padding_left : 2.46em;
+			--review_padding_top : 1.85em;
+			--review_padding_right : 2.69em;
+			--review_padding_bottom : 1.85em;
+		
+		/* BORDER ------------------------*/
+			--review_border_radius : 0.38em;
+
+			--white_box_shadow : 1em 1em 2em hsla(217, 19%, 35%, 0.1);
+
+
+		/* POSITION ------------------------*/
+
+
+		/*  FLEXBOX ------------------------*/
+
+		/*  GRID ------------------------*/
+		--container_column_gap : 1em; 
+		--container_row_gap : 0.85em;
+
+
+
+
+	}
+}
