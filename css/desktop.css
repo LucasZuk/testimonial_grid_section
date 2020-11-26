@@ -68,7 +68,7 @@
 			--identity_margin_left : 1.31em;
 
 			--container_margin_left : 12.69em;
-			--container_margin_top : 8.69em;
+			--container_margin_top : 12.69em;
 			--container_margin_right : auto;
 
 		/* PADDING ------------------------*/
@@ -104,7 +104,7 @@
 	:root
 	{
 			--container_margin_left : 3.69em;
-			--container_margin_top : 12.69em;
+			--container_margin_top : 8.69em;
 			--container_margin_right : auto;
 			--container_margin_bottom : auto;
 	}
@@ -116,7 +116,7 @@
 	:root
 	{
 			--container_margin_left : 0.69em;
-			--container_margin_top : 12.69em;
+			--container_margin_top : 8.69em;
 			--container_margin_right : auto;
 			--container_margin_bottom : auto;
 	}
