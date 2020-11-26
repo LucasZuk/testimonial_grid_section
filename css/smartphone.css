@@ -1,56 +1,51 @@
-/* TABLET PARAMETERS ------------------------*/
+/* SMARTPHONE PARAMETERS ------------------------*/
 
-@media screen and (min-width : 375px) and (max-width : 779px)
+@media screen and (max-width : 374px)
 {
 
 	.container
 		{
-			display: grid;
-			grid-template:
-			     "top_long_review top_long_review top_short_review" var(--top_height)
-			     "bottom_short_review bottom_long_review bottom_long_review" var(--bottom_height)
-			     "right_review right_review right_review" var(--bottom_height)
-			    / var(--short_width) var(--middle_width) var(--short_width);			
-			grid-column-gap: var(--container_column_gap);
-			grid-row-gap: var(--container_row_gap);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
 		
 	:root
 	{
 		/* SIZE ------------------------*/
 			--body_width : 100vw;
-			--body_height : 100vh;
+			--body_height : 145.31em;
 
-			--container_width : 47.09em;
-			--container_height : auto;
+			--container_width : 25.15em;
+			--container_height : 132.31em;
 
 			/* GRID SIZE */
-				--left_part_width : 60.46em;
+				--left_part_width : 25.15em;
 				--left_part_height : 44em;
 
-				--top_width : 57.46em;
+				--top_width : 25.15em;
 				--top_height : 26.69em;
 
-				--bottom_width : 60.46em;
+				--bottom_width : 25.15em;
 				--bottom_height : 25.46em;
 
-				--short_width : 13.62em;
-				--middle_width : 17.85em;
-				--long_width : 35.54em;
+				--short_width : 25.15em;
+				--middle_width : 25.15em;
+				--long_width : 25.15em;
 
-				--right_part_width : 16.62em;
+				--right_part_width : 25.15em;
 				--right_part_height : 44em;
 
 			/* REVIEW SIZE */
-				--review_top_height : 22.99em;
-				--review_bottom_height : 21.76em;
+				--review_top_height : auto;
+				--review_bottom_height : auto;
 
-				--review_short_width : 8.48em;
-				--review_middle_width : 8.46em;
-				--review_long_width : 27.39em;
+				--review_short_width : 20em;
+				--review_middle_width : 20em;
+				--review_long_width : 20em;
 
-				--review_right_part_width : 11.48em;
-				--review_right_part_height : 40.30em;
+				--review_right_part_width : 20em;
+				--review_right_part_height : auto;
 
 			--profil_height : 2.46em;
 			--picture_height : 2.15em;
@@ -70,10 +65,10 @@
 		/* MARGIN ------------------------*/
 			--identity_margin_left : 1.31em;
 
-			--container_margin_left : 0.69em;
-			--container_margin_top : 12.69em;
+			--container_margin_left : 1.85em;
+			--container_margin_top : 5.46em;
 			--container_margin_right : auto;
-			--container_margin_bottom : auto;
+			--container_margin_bottom : 5.38;
 
 		/* PADDING ------------------------*/
 			--review_padding_left : 2.46em;
