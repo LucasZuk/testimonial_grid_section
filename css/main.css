@@ -253,10 +253,3 @@
 				border-color: #a980e0;
 				border-width: 2px;
 			}
-			
-
-
-/*	 	let containerReview = document.createElement("div");
-	 		containerReview.classList.add("container__review", "container__review--layout");
-	 		containerReview.style.backgroundColor = colorBG;
-	 		containerReview.style.flexGrow = size;*/

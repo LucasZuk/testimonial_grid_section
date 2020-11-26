@@ -8,9 +8,6 @@ class Review
 	 	this.profilPicture = profilPicture;
 	 	this.reviewTitle = reviewTitle;
 	 	this.reviewParagraph = reviewParagraph;
-/*	 	this.colorBG = colorBG;
-	 	this.colorText = colorText;
-	 	this.size = size;*/
 	 }
 
 	 publishReview(parentClassName)
