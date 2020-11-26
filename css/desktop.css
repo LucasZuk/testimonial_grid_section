@@ -1,0 +1,61 @@
+/* DESKTOP PARAMETERS ------------------------*/
+
+@media screen and (min-width: 780px)
+{
+
+
+	:root
+	{
+		/* SIZE ------------------------*/
+			--body_width : 100vw;
+			--body_height : 100vh;
+
+			--container_width : 85.39em;
+			--container_height : 44em;
+
+			--left_part_width : 63.46em;
+			--left_part_height : 44em;
+
+			--top_width : 63.46em;
+			--top_height : 21.69em;
+
+			--bottom_width : 63.46em;
+			--bottom_height : 20.46em;
+
+			--short_width : 19.62em;
+			--middle_width : 19.61em;
+			--long_width : 41.54em;
+
+			--right_part_width : 19.62em;
+			--right_part_height : 44em; 
+
+		/* FONT ------------------------*/
+
+
+
+
+		/* BACKGROUND ------------------------*/
+
+		/* MARGIN ------------------------*/
+
+
+
+		/* PADDING ------------------------*/
+		
+		/* BORDER ------------------------*/
+
+
+		/* POSITION ------------------------*/
+
+
+		/*  FLEXBOX ------------------------*/
+
+		/*  GRID ------------------------*/
+		--container_column_gap : 2.31em; 
+		--container_row_gap : 1.85em;
+
+
+
+
+	}
+}

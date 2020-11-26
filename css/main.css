@@ -1,9 +1,10 @@
 /* GENERAL SITTING ----------------*/
 	:root
 	{
+
 		/* SCREEN SIZE ----------------*/
 		--mobile_screen_width : 375px;
-		--tablet_screen_width : 700px;
+		--tablet_screen_width : 780px;
 		--desktop_screen_width : 1440px;
 
 		/* COLORS ----------------*/
@@ -22,20 +23,134 @@
 			--general_font_size : 13px;
 			--small_font_size : 11px;
 			--mini_font_size : 9px;
-
 	}
 
-	* 
+	*
 	{
-		font-family: 'Barlow Semi Condensed', sans-serif;
+		font-size: 13px;
 	}
 
-	.left_part__top
+
+/* BODY  ----------------*/
+	.body
 	{
-		display: flex;
 	}
 
-	.container__review
+	.body--layout
 	{
-		max-width: 540px;
+		font-size: var(--general_font_size);
+
+		width: var(--body_width);
+		height: var(--body_height);
+
+		background-color: var(--light_grayish_blue);
 	}
+
+
+	/* CONTAINER  ----------------*/
+		.container
+		{
+			display: grid;
+			grid-template:
+			     "top_long_review top_long_review top_short_review right_review" var(--top_height)
+			     "bottom_short_review bottom_long_review bottom_long_review right_review" var(--bottom_height)
+			    / var(--short_width) var(--middle_width) var(--short_width) var(--short_width);			
+			grid-column-gap: var(--container_column_gap);
+			grid-row-gap: var(--container_row_gap);
+		}
+
+		.container--layout
+		{
+			width: var(--container_width);
+			height: var(--container_height);
+		}
+
+		/* TOP LONG REVIEWS ----------------*/
+			.top__long_review
+			{
+				grid-area: top_long_review;
+			}
+
+			.top__long_review--layout
+			{
+				background-color: var(--moderate_violet);
+				color: var(--light_gray);
+
+				width: var(--long_width);
+				height: var(--top_height);
+			}
+		
+		/* TOP SHORT REVIEWS ----------------*/
+			.top__short_review
+			{
+				grid-area: top_short_review;
+			}
+
+			.top__short_review--layout
+			{
+				background-color: var(--very_dark_grayish_blue);
+				color: var(--light_gray);
+
+				width: var(--short_width);
+				height: var(--top_height);
+			}
+
+			/* BOTTOM LONG REVIEWS ----------------*/
+				.bottom__long_review
+				{
+					grid-area: bottom_long_review;
+				}
+
+				.bottom__long_review--layout
+				{
+					background-color: var(--very_dark_blackish_blue);
+					color: var(--light_gray);
+
+					width: var(--long_width);
+					height: var(--bottom_height);
+				}
+
+			/* BOTTOM SHORT REVIEWS ----------------*/
+				.bottom__short_review
+				{
+					grid-area: bottom_short_review;
+				}
+
+				.bottom__short_review--layout
+				{
+					background-color: var(--white);
+					color: var(--very_dark_blackish_blue);
+
+					width: var(--short_width);
+					height: var(--bottom_height);
+				}
+
+		/* CONTAINER RIGHT PART  ----------------*/
+			.right_review
+			{
+				grid-area: right_review;
+			}
+
+			.right_review--layout
+			{
+				background-color: var(--white);
+				color: var(--very_dark_blackish_blue);
+
+				width: var(--left_right_width);
+				height: var(--left_right_height);
+			}
+
+	/* REVIEWS  ----------------*/
+		.review--layout
+		{
+			margin-left: var(--review_margin_left);
+			margin-top: var(--review_margin_top);
+			margin-right: var(--review_margin_right);
+			margin-bottom: var(--review_margin_bottom);
+		}
+
+
+/*	 	let containerReview = document.createElement("div");
+	 		containerReview.classList.add("container__review", "container__review--layout");
+	 		containerReview.style.backgroundColor = colorBG;
+	 		containerReview.style.flexGrow = size;*/
