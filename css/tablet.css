@@ -70,7 +70,7 @@
 		/* MARGIN ------------------------*/
 			--identity_margin_left : 1.31em;
 
-			--container_margin_left : 0.69em;
+			--container_margin_left : auto;
 			--container_margin_top : 12.69em;
 			--container_margin_right : auto;
 			--container_margin_bottom : auto;
